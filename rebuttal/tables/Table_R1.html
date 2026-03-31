@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Table R4</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 24px;
+      color: #111;
+      background: #fff;
+    }
+    .caption {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      max-width: 1000px;
+      font-size: 15px;
+    }
+    th, td {
+      border: 1px solid #444;
+      padding: 8px 12px;
+      text-align: center;
+      vertical-align: middle;
+    }
+    th {
+      background: #f2f2f2;
+      font-weight: 700;
+    }
+    td.method {
+      text-align: left;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+    tr.group-row td {
+      background: #e9e9e9;
+      font-weight: 700;
+      text-align: left;
+    }
+    .best {
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <div class="caption">Table R1: Gap (%) ± std on Standard Benchmarks.</div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Method</th>
+        <th>CFLP</th>
+        <th>CVRP</th>
+        <th>FJSP</th>
+        <th>MIS</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="group-row">
+        <td colspan="5">DeepSeek v3.2</td>
+      </tr>
+      <tr>
+        <td class="method">FunSearch</td>
+        <td>22.13±3.03</td>
+        <td>24.13±9.59</td>
+        <td>27.82±3.98</td>
+        <td>17.89±2.93</td>
+      </tr>
+      <tr>
+        <td class="method">EoH</td>
+        <td>18.48±4.73</td>
+        <td>17.42±1.55</td>
+        <td>28.08±1.62</td>
+        <td>11.35±6.18</td>
+      </tr>
+      <tr>
+        <td class="method">ReEvo</td>
+        <td>16.56±6.55</td>
+        <td>18.04±4.65</td>
+        <td>28.24±2.71</td>
+        <td>14.70±3.78</td>
+      </tr>
+      <tr>
+        <td class="method">MCTS-AHD</td>
+        <td>14.09±2.23</td>
+        <td>19.97±3.88</td>
+        <td>26.55±2.13</td>
+        <td>16.16±5.51</td>
+      </tr>
+      <tr>
+        <td class="method">A2DEPT</td>
+        <td class="best">11.46±3.70</td>
+        <td class="best">8.79±2.63</td>
+        <td class="best">18.95±4.15</td>
+        <td class="best">4.20±2.07</td>
+      </tr>
+
+      <tr class="group-row">
+        <td colspan="5">Gemini 2.5 Flash</td>
+      </tr>
+      <tr>
+        <td class="method">FunSearch</td>
+        <td>23.94±1.69</td>
+        <td>25.13±3.96</td>
+        <td>29.31±5.15</td>
+        <td>17.12±6.28</td>
+      </tr>
+      <tr>
+        <td class="method">EoH</td>
+        <td>17.82±8.04</td>
+        <td>14.72±0.79</td>
+        <td>29.45±3.72</td>
+        <td>16.47±4.27</td>
+      </tr>
+      <tr>
+        <td class="method">ReEvo</td>
+        <td>16.15±6.75</td>
+        <td>17.47±1.38</td>
+        <td>29.21±4.09</td>
+        <td>16.15±0.83</td>
+      </tr>
+      <tr>
+        <td class="method">MCTS-AHD</td>
+        <td>20.87±2.57</td>
+        <td>15.28±3.73</td>
+        <td>30.16±1.45</td>
+        <td>16.14±5.90</td>
+      </tr>
+      <tr>
+        <td class="method">A2DEPT</td>
+        <td class="best">14.24±1.25</td>
+        <td class="best">12.49±2.73</td>
+        <td class="best">22.71±5.91</td>
+        <td class="best">7.43±2.92</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>

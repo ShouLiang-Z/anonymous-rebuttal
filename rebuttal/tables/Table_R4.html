@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Table R2</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 24px;
+      color: #111;
+      background: #fff;
+    }
+    .caption {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      max-width: 1200px;
+      font-size: 15px;
+    }
+    th, td {
+      border: 1px solid #444;
+      padding: 8px 12px;
+      text-align: center;
+      vertical-align: middle;
+    }
+    th {
+      background: #f2f2f2;
+      font-weight: 700;
+    }
+    td.method {
+      text-align: left;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+    .best {
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <div class="caption">Table R4: Normalized scores under equalized token budgets.</div>
+
+  <table>
+    <thead>
+      <tr>
+        <th rowspan="2">Method</th>
+        <th colspan="4">10 yuan</th>
+        <th colspan="4">5 yuan</th>
+      </tr>
+      <tr>
+        <th>CFLP</th>
+        <th>CVRP</th>
+        <th>FJSP</th>
+        <th>MIS</th>
+        <th>CFLP</th>
+        <th>CVRP</th>
+        <th>FJSP</th>
+        <th>MIS</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="method">A2DEPT</td>
+        <td class="best">0.928265</td>
+        <td class="best">0.946534</td>
+        <td class="best">0.856728</td>
+        <td class="best">0.959541</td>
+        <td class="best">0.893465</td>
+        <td class="best">0.914955</td>
+        <td class="best">0.839317</td>
+        <td class="best">0.937571</td>
+      </tr>
+      <tr>
+        <td class="method">FunSearch</td>
+        <td>0.851237</td>
+        <td>0.841436</td>
+        <td>0.749394</td>
+        <td>0.862359</td>
+        <td>0.815683</td>
+        <td>0.817451</td>
+        <td>0.735135</td>
+        <td>0.839453</td>
+      </tr>
+      <tr>
+        <td class="method">EoH</td>
+        <td>0.867576</td>
+        <td>0.862227</td>
+        <td>0.786642</td>
+        <td>0.895718</td>
+        <td>0.846272</td>
+        <td>0.824532</td>
+        <td>0.724673</td>
+        <td>0.871143</td>
+      </tr>
+      <tr>
+        <td class="method">ReEvo</td>
+        <td>0.874893</td>
+        <td>0.861934</td>
+        <td>0.769322</td>
+        <td>0.885672</td>
+        <td>0.851323</td>
+        <td>0.841243</td>
+        <td>0.737433</td>
+        <td>0.864064</td>
+      </tr>
+      <tr>
+        <td class="method">MCTS-AHD</td>
+        <td>0.884511</td>
+        <td>0.852834</td>
+        <td>0.793448</td>
+        <td>0.889571</td>
+        <td>0.847499</td>
+        <td>0.837319</td>
+        <td>0.747653</td>
+        <td>0.853007</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>

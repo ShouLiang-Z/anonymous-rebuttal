@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ablation Table</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 24px;
+      color: #111;
+      background: #fff;
+    }
+    .caption {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      max-width: 900px;
+      font-size: 15px;
+      border-top: 2px solid #222;
+      border-bottom: 2px solid #222;
+    }
+    th, td {
+      padding: 8px 14px;
+      text-align: center;
+      vertical-align: middle;
+    }
+    thead th {
+      border-bottom: 2px solid #222;
+      font-weight: 700;
+    }
+    td.config {
+      text-align: left;
+      white-space: nowrap;
+    }
+    tr.section-row td {
+      font-style: italic;
+      font-weight: 700;
+      text-align: left;
+      padding-top: 10px;
+      padding-bottom: 2px;
+    }
+    .best {
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <div class="caption">Table R5: Core component ablation on CVRP and FJSP.</div>
+
+  <table>
+    <thead>
+      <tr>
+        <th rowspan="2" style="text-align:left;">Configuration</th>
+        <th colspan="2">Gap (%)</th>
+      </tr>
+      <tr>
+        <th>CVRP</th>
+        <th>FJSP</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="section-row">
+        <td colspan="3">A. Core Component Ablation</td>
+      </tr>
+      <tr>
+        <td class="config">Variant-I (Fixed-template)</td>
+        <td>16.15</td>
+        <td>26.30</td>
+      </tr>
+      <tr>
+        <td class="config">Variant-II (w/o Boltzmann)</td>
+        <td>12.73</td>
+        <td>22.11</td>
+      </tr>
+      <tr>
+        <td class="config">Variant-III (w/o Adaptive)</td>
+        <td>9.59</td>
+        <td>19.78</td>
+      </tr>
+      <tr>
+        <td class="config">Variant-IV (Random selection)</td>
+        <td>10.32</td>
+        <td>20.02</td>
+      </tr>
+      <tr>
+        <td class="config">A<sub>2</sub>DEPT (Ours)</td>
+        <td class="best">8.79</td>
+        <td class="best">18.95</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
